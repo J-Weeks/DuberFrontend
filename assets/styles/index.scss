@@ -1,10 +1,11 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 
-$main-background-color: #26e046;
+$main-background-color: #236167;
 $secondary-background: #2c8d3d;
-$font-color: #2a6a35;
+$font-color: #68979b;
+$main-font-family: 'Indie Flower', cursive;
 
 body {
   background-color: $main-background-color;
@@ -16,9 +17,10 @@ body {
   height: 300px;
   text-align: center;
 
-  h1 {
+  h1,
+  h3 {
     color: $font-color;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font-family;
   }
 }
 
