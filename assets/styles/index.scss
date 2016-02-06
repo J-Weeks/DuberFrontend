@@ -1,10 +1,31 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-$background-color: #4e4e4e;
+$main-background-color: #26e046;
+$secondary-background: #2c8d3d;
 $font-color: #dfdfdf;
 
 body {
-  background-color: $background-color;
+  background-color: $main-background-color;
   color: $font-color;
+}
+
+.top-panel {
+  background-color: $main-background-color;
+  height: 300px;
+  text-align: center;
+}
+
+.middle-panel {
+  background-color: $secondary-background;
+  height: 300px;
+  text-align: center;
+  width: 100%;
+}
+
+.bottom-panel {
+  background-color: $main-background-color;
+  height: 300px;
+  text-align: center;
+  width: 100%;
 }
