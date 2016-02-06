@@ -8,7 +8,6 @@
 require('./assets/scripts/index.js');
 
 // styles
-require("font-awesome-sass-loader");
 require('./assets/styles/index.scss');
 
 // attach jQuery globally
