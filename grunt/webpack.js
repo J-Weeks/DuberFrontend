@@ -15,7 +15,6 @@ module.exports = {
       path: './',
       filename: '[name].js'
     },
-
     plugins: [
       new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
       new webpack.ProvidePlugin({
@@ -58,9 +57,16 @@ module.exports = {
         },
         { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "file-loader"
-      }
+        },
+        {
+          test: /\.handlebars$/,
+          loader: "handlebars-loader",
+        }
       ]
     },
+    node: {
+  fs: "empty"
+},
 
     stats: {
       colors: true,
